@@ -1,21 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
-
-using MVCLaboratorio.Utilerias;
-
-
 namespace MVCLaboratorio.Utilerias
 {
     public class BaseHelper
     {
         public static int ejecutarSentencia(String sentencia,
-                             CommandType tipo,
-                             List<SqlParameter> parametros = null)
+                           CommandType tipo,
+                           List<SqlParameter> parametros = null)
         {
             SqlConnection con = new SqlConnection();
             SqlCommand comando = new SqlCommand();
