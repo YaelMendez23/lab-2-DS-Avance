@@ -17,7 +17,7 @@ namespace MVCLaboratorio.Controllers
 
         public ActionResult Index()
         {
-            ViewData["Video"] = BaseHelper.ejecutarConsulta("SP_video_Consultar", CommandType.StoredProcedure);
+            ViewData["Video"] = BaseHelper.ejecutarConsulta("SP_video1_Consultar", CommandType.StoredProcedure);
 	    
             return View();
         }
